@@ -3,6 +3,9 @@ import {
   Hero, 
   About, 
   Activity, 
+  Voice,
+  JoinFlow,
+  ApplicationLink,
   Contact, 
   Footer 
 } from './components';
@@ -15,6 +18,9 @@ function App() {
       <Hero />
       <About />
       <Activity />
+      {/* <Voice /> メンバーが増えたら乗せていく予定*/}
+      <JoinFlow />
+      <ApplicationLink />
       <Contact />
       <Footer />
     </div>
