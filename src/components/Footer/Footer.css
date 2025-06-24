@@ -85,10 +85,11 @@
 
 .footer-bottom-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   font-size: 0.9rem;
   color: #9ca3af;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
