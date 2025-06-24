@@ -3,7 +3,7 @@ import {
   Hero, 
   About, 
   Activity, 
-  Voice,
+  // Voice,
   JoinFlow,
   ApplicationLink,
   Contact, 
@@ -18,7 +18,7 @@ function App() {
       <Hero />
       <About />
       <Activity />
-      {/* <Voice /> メンバーが増えたら乗せていく予定*/}
+      {/* <Voice /> 今後追加予定*/}
       <JoinFlow />
       <ApplicationLink />
       <Contact />
