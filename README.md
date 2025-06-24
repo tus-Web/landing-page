@@ -9,12 +9,15 @@
 npm install
 ```
 
-2. 開発サーバーを起動
+2. コードをLint
+```bash
+npm run lint
+```
+3. 開発サーバーを起動
 ```bash
 npm run dev
 ```
-
-3. ブラウザで `http://localhost:5173` (または表示されたURL) にアクセス
+4. ブラウザで `http://localhost:5173` (または表示されたURL) にアクセス
 
 ## 📁 プロジェクト構成
 
