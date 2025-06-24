@@ -54,7 +54,6 @@ const Footer: React.FC = () => {
           <div className="footer-divider"></div>
           <div className="footer-bottom-content">
             <p>&copy; 2024 Web Circle. All rights reserved.</p>
-            <p>Made with ❤️ by Web Circle Members</p>
           </div>
         </div>
       </div>
