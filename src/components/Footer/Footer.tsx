@@ -2,6 +2,7 @@ import React from 'react';
 import './Footer.css';
 
 const Footer: React.FC = () => {
+  const year = new Date().getFullYear();
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -62,7 +63,7 @@ const Footer: React.FC = () => {
         <div className="footer-bottom">
           <div className="footer-divider"></div>
           <div className="footer-bottom-content">
-            <p>© 2025 tus.Genesis. All rights reserved</p>
+            <p>&copy; {year} Web Circle. All rights reserved.</p>
           </div>
         </div>
       </div>
