@@ -3,7 +3,10 @@ import {
   Hero, 
   About, 
   Activity, 
-  Contact, 
+  // Voice,
+  JoinFlow,
+  ApplicationLink,
+  // Contact, 
   Footer 
 } from './components';
 import './App.css';
@@ -15,7 +18,10 @@ function App() {
       <Hero />
       <About />
       <Activity />
-      <Contact />
+      {/* <Voice /> 今後追加予定*/}
+      <JoinFlow />
+      <ApplicationLink />
+      {/* <Contact /> */}
       <Footer />
     </div>
   );

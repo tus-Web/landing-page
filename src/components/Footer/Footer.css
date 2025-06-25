@@ -1,7 +1,8 @@
 .footer {
-  background: linear-gradient(135deg, #1f2937, #374151);
+  background: oklch(0.21 0.0006 285.885);
   color: white;
   padding: 3rem 0 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer-container {
@@ -63,9 +64,12 @@
 }
 
 .social-links a {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
   font-size: 1.5rem;
-  padding: 0.5rem;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   transition: all 0.3s ease;
@@ -85,10 +89,11 @@
 
 .footer-bottom-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   font-size: 0.9rem;
   color: #9ca3af;
+  text-align: center;
 }
 
 @media (max-width: 768px) {

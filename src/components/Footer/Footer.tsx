@@ -2,30 +2,40 @@ import React from 'react';
 import './Footer.css';
 
 const Footer: React.FC = () => {
+  const year = new Date().getFullYear();
   return (
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-content">
           <div className="footer-section">
-            <h3>Web Circle</h3>
+            <h3>TUS.Genesis</h3>
             <p>
-              未来を創るWebサークル<br />
-              一緒に学び、成長していきましょう！
+              次世代のエンジニアを目指す<br />
+              東京理科大学プログラミングサークル
             </p>
             <div className="social-links">
-              <a href="#" aria-label="Twitter">🐦</a>
-              <a href="#" aria-label="GitHub">📦</a>
-              <a href="#" aria-label="Discord">💬</a>
-              <a href="#" aria-label="YouTube">📺</a>
+              <a href="https://twitter.com/tusgenesis" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                🐦
+              </a>
+              <a href="https://github.com/tusgenesis" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                📦
+              </a>
+              <a href="https://discord.gg/tusgenesis" target="_blank" rel="noopener noreferrer" aria-label="Discord">
+                💬
+              </a>
+              <a href="https://www.instagram.com/tusgenesis" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                �
+              </a>
             </div>
           </div>
           
           <div className="footer-section">
-            <h4>Quick Links</h4>
+            <h4>ナビゲーション</h4>
             <ul>
-              <li><a href="#about">About</a></li>
-              <li><a href="#activity">Activity</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="#about">概要</a></li>
+              <li><a href="#activity">活動</a></li>
+              <li><a href="#flow">参加の流れ</a></li>
+              <li><a href="#contact">お問い合わせ</a></li>
             </ul>
           </div>
           
@@ -42,10 +52,10 @@ const Footer: React.FC = () => {
           <div className="footer-section">
             <h4>Contact Info</h4>
             <ul>
-              <li>📧 webcircle@university.ac.jp</li>
-              <li>📱 @webcircle_uni</li>
-              <li>📍 情報学部棟 3F PC室</li>
-              <li>🕒 毎週火曜日 18:00-20:00</li>
+              <li>📧 contact@tusgenesis.org</li>
+              <li>📱 @tusgenesis</li>
+              <li>📍 東京理科大学 野田キャンパス</li>
+              <li>🕒 毎週水曜日 18:00-20:00</li>
             </ul>
           </div>
         </div>
@@ -53,8 +63,7 @@ const Footer: React.FC = () => {
         <div className="footer-bottom">
           <div className="footer-divider"></div>
           <div className="footer-bottom-content">
-            <p>&copy; 2024 Web Circle. All rights reserved.</p>
-            <p>Made with ❤️ by Web Circle Members</p>
+            <p>&copy; {year} Web Circle. All rights reserved.</p>
           </div>
         </div>
       </div>
