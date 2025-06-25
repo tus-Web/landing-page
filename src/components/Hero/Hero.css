@@ -38,19 +38,13 @@
 
 .hero-title {
   font-size: 3.5rem;
-  font-weight: 800;
-  line-height: 1.2;
+  font-weight: 900;
+  line-height: 1.1;
   margin-bottom: 1.5rem;
-  color: black;
-}
-
-.highlight {
-  background: linear-gradient(135deg, #3b82f6, #8b5cf6, #06b6d4);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  background-size: 200% 200%;
+  font-family: 'Inter', 'SF Pro Display', 'Segoe UI', 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+  letter-spacing: -0.025em;
   animation: gradientShift 3s ease-in-out infinite;
+  color: white;
 }
 
 .hero-description {
@@ -151,8 +145,31 @@
 .letter {
   display: inline-block;
   opacity: 0;
-  transform: translateY(20px);
-  animation: fade-in-up 0.6s forwards;
+  transform: translateX(-20px);
+  animation: slide-in-left 0.8s ease-out forwards;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes slide-in-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 @keyframes fade-in-up {
@@ -185,6 +202,7 @@
 
   .hero-title {
     font-size: 2.5rem;
+    letter-spacing: -0.02em;
   }
 
   .hero-buttons {
