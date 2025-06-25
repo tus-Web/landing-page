@@ -28,16 +28,16 @@ const Contact: React.FC = () => {
     <section id="contact" className="contact">
       <div className="contact-container">
         <div className="section-header">
-          <h2>Contact</h2>
-          <p>お気軽にお問い合わせください</p>
+          <h2>お問い合わせ</h2>
+          <p>ご質問やご不明な点がございましたら、お気軽にお問い合わせください</p>
         </div>
         
         <div className="contact-content">
           <div className="contact-info">
-            <h3>参加をお考えの方へ</h3>
+            <h3>TUS.Genesisへの参加をお考えの方へ</h3>
             <p>
-              Webサークルへの参加に興味をお持ちいただき、ありがとうございます！
-              初心者の方も大歓迎です。まずはお気軽にご連絡ください。
+              TUS.Genesisへの参加に興味をお持ちいただき、ありがとうございます！
+              プログラミング初心者の方も大歓迎です。まずはお気軽にご連絡ください。
             </p>
             
             <div className="contact-details">
@@ -45,7 +45,7 @@ const Contact: React.FC = () => {
                 <div className="contact-icon">📧</div>
                 <div>
                   <h4>Email</h4>
-                  <p>webcircle@university.ac.jp</p>
+                  <p>contact@tusgenesis.org</p>
                 </div>
               </div>
               
@@ -53,7 +53,7 @@ const Contact: React.FC = () => {
                 <div className="contact-icon">📱</div>
                 <div>
                   <h4>SNS</h4>
-                  <p>@webcircle_uni</p>
+                  <p>@tusgenesis</p>
                 </div>
               </div>
               
@@ -61,7 +61,7 @@ const Contact: React.FC = () => {
                 <div className="contact-icon">📍</div>
                 <div>
                   <h4>活動場所</h4>
-                  <p>情報学部棟 3F PC室</p>
+                  <p>東京理科大学 野田キャンパス</p>
                 </div>
               </div>
               
@@ -69,7 +69,7 @@ const Contact: React.FC = () => {
                 <div className="contact-icon">🕒</div>
                 <div>
                   <h4>活動時間</h4>
-                  <p>毎週火曜日 18:00-20:00</p>
+                  <p>毎週水曜日 18:00-20:00</p>
                 </div>
               </div>
             </div>
