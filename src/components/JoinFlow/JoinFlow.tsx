@@ -53,11 +53,11 @@ const JoinFlow: React.FC = () => {
           ))}
         </div>
 
-        <div className="cta-section">
+        {/* <div className="cta-section">
           <h3>まずは気軽にお問い合わせください！</h3>
           <p>質問や不安なことがあれば、いつでもお気軽にご連絡ください。</p>
           <a href="#contact" className="btn btn-primary">お問い合わせ</a>
-        </div>
+        </div> */}
       </div>
     </section>
   );

@@ -21,7 +21,7 @@ function App() {
       {/* <Voice /> 今後追加予定*/}
       <JoinFlow />
       <ApplicationLink />
-      <Contact />
+      {/* <Contact /> */}
       <Footer />
     </div>
   );
