@@ -1,6 +1,7 @@
 .contact {
   padding: 5rem 0;
-  background: #f8fafc;
+  background: white;
+  color: #333;
 }
 
 .contact-container {
@@ -16,13 +17,16 @@
 
 .section-header h2 {
   font-size: 2.5rem;
-  color: #1f2937;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6, #06b6d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   margin-bottom: 1rem;
 }
 
 .section-header p {
   font-size: 1.1rem;
-  color: #6b7280;
+  color: #4a5568;
 }
 
 .contact-content {
@@ -34,13 +38,13 @@
 
 .contact-info h3 {
   font-size: 1.8rem;
-  color: #1f2937;
+  color: #1a202c;
   margin-bottom: 1.5rem;
 }
 
 .contact-info > p {
   line-height: 1.7;
-  color: #4b5563;
+  color: #2d3748;
   margin-bottom: 2rem;
 }
 

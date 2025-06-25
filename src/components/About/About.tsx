@@ -6,21 +6,21 @@ const About: React.FC = () => {
     <section id="about" className="about">
       <div className="about-container">
         <div className="section-header">
-          <h2>About Us</h2>
+          <h2>TUS.Genesisについて</h2>
           <p>私たちのサークルについて</p>
         </div>
         
         <div className="about-content">
           <div className="about-text">
-            <h3>Web技術で未来を創造</h3>
+            <h3>エンジニアリングで未来を創造</h3>
             <p>
-              私たちのWebサークルは、最新のWeb技術を学び、実践的なプロジェクトを通じて
-              スキルアップを目指す学生団体です。HTML、CSS、JavaScriptから始まり、
-              React、Vue.js、Node.jsなど現代的なフレームワークまで幅広く学習しています。
+              TUS.Genesisは、東京理科大学でプログラミング技術を学び、実践的なプロジェクトを通じて
+              スキルアップを目指す学生団体です。Web開発、モバイルアプリ開発、AI・機械学習など
+              幅広い分野で活動しています。
             </p>
             <p>
-              初心者歓迎！経験豊富な先輩メンバーがサポートし、一人ひとりのペースに合わせて
-              学習を進めることができます。
+              初心者大歓迎！経験豊富な先輩メンバーがサポートし、一人ひとりのペースに合わせて
+              学習を進めることができます。理科大生なら誰でも参加できます。
             </p>
           </div>
           
