@@ -2,9 +2,22 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: black;
   color: white;
   padding-top: 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%23ffffff" fill-opacity="0.05"><circle cx="30" cy="30" r="1.5"/></g></svg>');
+  opacity: 0.5;
 }
 
 .hero-container {
@@ -15,20 +28,29 @@
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content {
+  animation: fadeInUp 1s ease-out;
 }
 
 .hero-title {
   font-size: 3.5rem;
-  font-weight: bold;
+  font-weight: 800;
   line-height: 1.2;
   margin-bottom: 1.5rem;
+  color: black;
 }
 
 .highlight {
-  background: linear-gradient(90deg, #fbbf24, #f59e0b);
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6, #06b6d4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  background-size: 200% 200%;
+  animation: gradientShift 3s ease-in-out infinite;
 }
 
 .hero-description {
@@ -41,55 +63,144 @@
 .hero-buttons {
   display: flex;
   gap: 1rem;
+  margin-bottom: 3rem;
 }
 
 .btn {
   padding: 0.75rem 2rem;
-  border-radius: 8px;
+  border-radius: 12px;
   text-decoration: none;
   font-weight: 600;
   transition: all 0.3s ease;
-  display: inline-block;
+  position: relative;
+  overflow: hidden;
 }
 
 .btn-primary {
-  background: #2563eb;
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
   color: white;
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
 }
 
 .btn-primary:hover {
-  background: #1d4ed8;
   transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.6);
 }
 
 .btn-secondary {
   background: transparent;
   color: white;
-  border: 2px solid white;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
 }
 
 .btn-secondary:hover {
-  background: white;
-  color: #667eea;
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
 }
 
-.hero-visual {
+.hero-stats {
+  display: flex;
+  gap: 2rem;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #3b82f6;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero-image {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 400px;
+  animation: fadeInRight 1s ease-out 0.3s both;
+}
+
+.hero-visual {
+  position: relative;
+  perspective: 1000px;
 }
 
 .code-block {
-  background: rgba(0, 0, 0, 0.3);
-  padding: 2rem;
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid rgba(99, 102, 241, 0.3);
   border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 2rem;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 0.9rem;
+  line-height: 1.6;
   backdrop-filter: blur(10px);
-  font-family: 'Courier New', monospace;
-  font-size: 1.5rem;
-  color: #fbbf24;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
   animation: float 3s ease-in-out infinite;
+}
+
+.code-line {
+  margin-bottom: 0.5rem;
+}
+
+.code-line.indent {
+  padding-left: 2rem;
+}
+
+.keyword {
+  color: #c586c0;
+}
+
+.variable {
+  color: #9cdcfe;
+}
+
+.function {
+  color: #dcdcaa;
+}
+
+.string {
+  color: #ce9178;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes gradientShift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
 }
 
 @keyframes float {
@@ -106,13 +217,30 @@
     grid-template-columns: 1fr;
     gap: 2rem;
     text-align: center;
+    padding: 0 1rem;
   }
-  
+
   .hero-title {
     font-size: 2.5rem;
   }
-  
+
   .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .hero-stats {
     justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .code-block {
+    font-size: 0.8rem;
+    padding: 1.5rem;
   }
 }

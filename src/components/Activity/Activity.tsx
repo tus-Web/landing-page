@@ -2,42 +2,32 @@ import React from 'react';
 import './Activity.css';
 
 const Activity: React.FC = () => {
-  const activities = [
+  const learningActivities = [
     {
-      title: "週次勉強会",
-      description: "毎週火曜日に新しい技術や手法について学習し、知識を共有しています。",
-      image: "📖",
-      tags: ["学習", "技術共有"]
+      title: "初心者講習",
+      description: "プログラミング初心者向けに基礎から丁寧に指導します。Web開発の基本からスタート。",
+      icon: "�"
+    }
+  ];
+
+  const exchangeActivities = [
+    {
+      title: "学習会",
+      description: "定期的な勉強会やLT大会で知識を共有し、お互いに学び合います。",
+      icon: "💡"
+    }
+  ];
+
+  const developmentActivities = [
+    {
+      title: "プロジェクト",
+      description: "チームでWebアプリやモバイルアプリなど様々なプロダクトを開発しています。",
+      icon: "�"
     },
     {
-      title: "ハッカソン参加",
-      description: "年2回、外部のハッカソンに参加してチーム開発のスキルを磨いています。",
-      image: "💻",
-      tags: ["チーム開発", "コンペティション"]
-    },
-    {
-      title: "Webサイト制作",
-      description: "地域の企業や団体のWebサイト制作を通じて実践的な経験を積んでいます。",
-      image: "🌐",
-      tags: ["実践", "クライアントワーク"]
-    },
-    {
-      title: "技術ブログ運営",
-      description: "学んだ技術や経験をブログにまとめ、アウトプットの習慣を身につけています。",
-      image: "✍️",
-      tags: ["アウトプット", "技術記事"]
-    },
-    {
-      title: "オープンソース貢献",
-      description: "GitHubでのオープンソースプロジェクトへの貢献を通じて開発力を向上させています。",
-      image: "🔧",
-      tags: ["OSS", "コミュニティ"]
-    },
-    {
-      title: "学園祭展示",
-      description: "年に一度の学園祭では、制作した作品を展示し、多くの人に見てもらっています。",
-      image: "🎪",
-      tags: ["展示", "作品発表"]
+      title: "理大祭",
+      description: "年に一度の理大祭では、制作した作品を展示し、多くの人に見てもらっています。",
+      icon: "🎪"
     }
   ];
 
@@ -45,25 +35,67 @@ const Activity: React.FC = () => {
     <section id="activity" className="activity">
       <div className="activity-container">
         <div className="section-header">
-          <h2>Activities</h2>
-          <p>私たちの主な活動内容</p>
+          <h2>活動内容</h2>
+          <p>私たちの主な活動について</p>
         </div>
         
-        <div className="activities-grid">
-          {activities.map((activity, index) => (
-            <div key={index} className="activity-card">
-              <div className="activity-image">{activity.image}</div>
-              <div className="activity-content">
-                <h3>{activity.title}</h3>
-                <p>{activity.description}</p>
-                <div className="activity-tags">
-                  {activity.tags.map((tag, tagIndex) => (
-                    <span key={tagIndex} className="tag">{tag}</span>
-                  ))}
+        <div className="activity-sections">
+          {/* 学習セクション */}
+          <div className="activity-section">
+            <h3 className="section-title">
+              <span className="section-icon">📚</span>
+              学習
+            </h3>
+            <div className="activities-grid">
+              {learningActivities.map((activity, index) => (
+                <div key={index} className="activity-card">
+                  <div className="activity-icon">{activity.icon}</div>
+                  <div className="activity-content">
+                    <h4>{activity.title}</h4>
+                    <p>{activity.description}</p>
+                  </div>
                 </div>
-              </div>
+              ))}
             </div>
-          ))}
+          </div>
+
+          {/* 交流セクション */}
+          <div className="activity-section">
+            <h3 className="section-title">
+              <span className="section-icon">🤝</span>
+              交流
+            </h3>
+            <div className="activities-grid">
+              {exchangeActivities.map((activity, index) => (
+                <div key={index} className="activity-card">
+                  <div className="activity-icon">{activity.icon}</div>
+                  <div className="activity-content">
+                    <h4>{activity.title}</h4>
+                    <p>{activity.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* 開発セクション */}
+          <div className="activity-section">
+            <h3 className="section-title">
+              <span className="section-icon">🚀</span>
+              開発
+            </h3>
+            <div className="activities-grid">
+              {developmentActivities.map((activity, index) => (
+                <div key={index} className="activity-card">
+                  <div className="activity-icon">{activity.icon}</div>
+                  <div className="activity-content">
+                    <h4>{activity.title}</h4>
+                    <p>{activity.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>
