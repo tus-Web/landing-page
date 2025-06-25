@@ -6,7 +6,7 @@ import {
   // Voice,
   JoinFlow,
   ApplicationLink,
-  Contact, 
+  // Contact, 
   Footer 
 } from './components';
 import './App.css';
