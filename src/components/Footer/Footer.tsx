@@ -62,8 +62,7 @@ const Footer: React.FC = () => {
         <div className="footer-bottom">
           <div className="footer-divider"></div>
           <div className="footer-bottom-content">
-            <p>&copy; 2025 tus.Genesis. All rights reserved.</p>
-            <p>Made with ❤️ by tus.Genesis Members</p>
+            <p>© 2025 tus.Genesis. All rights reserved</p>
           </div>
         </div>
       </div>
