@@ -18,7 +18,7 @@ function App() {
       <Hero />
       <About />
       <Activity />
-      {/* <Voice /> 今後追加予定*/}
+      {/* <Voice /> 今後追加予定です */}
       <JoinFlow />
       <ApplicationLink />
       {/* <Contact /> */}
