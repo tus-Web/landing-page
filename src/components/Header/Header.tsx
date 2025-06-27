@@ -16,7 +16,6 @@ const Header: React.FC = () => {
             <li><a href="#hero">ホーム</a></li>
             <li><a href="#about">概要</a></li>
             <li><a href="#activity">活動</a></li>
-            <li><a href="#voice">メンバー</a></li>
             <li><a href="#join">参加の流れ</a></li>
           </ul>
         </nav>
