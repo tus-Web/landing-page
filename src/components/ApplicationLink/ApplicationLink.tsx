@@ -31,13 +31,6 @@ const ApplicationLink: React.FC = () => {
               💬 気軽に質問する
             </a>
           </div>
-
-          <div className="application-note">
-            <p>
-              <strong>説明会開催日時:</strong> 毎週水曜日 18:00〜19:00<br />
-              <strong>場所:</strong> 東京理科大学 野田キャンパス
-            </p>
-          </div>
         </div>
       </div>
     </section>
