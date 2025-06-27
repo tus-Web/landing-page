@@ -54,8 +54,8 @@ const Footer: React.FC = () => {
             <ul>
               <li>📧 contact@tusgenesis.org</li>
               <li>📱 @tusgenesis</li>
-              <li>📍 東京理科大学 野田キャンパス</li>
-              <li>🕒 毎週水曜日 18:00-20:00</li>
+              <li>📍 東京理科大学 葛飾キャンパス</li>
+              <li>🕒 毎週金曜日 18:00-20:00</li>
             </ul>
           </div>
         </div>
