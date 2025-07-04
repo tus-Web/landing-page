@@ -1,91 +1,140 @@
 .activity {
-  padding: 5rem 0;
+  /* 縦パディングを詰める */
+  padding: 2rem 0;
   background: white;
+  color: #333;
 }
 
 .activity-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1.5rem;  /* サイドマージンやや縮小 */
 }
 
 .section-header {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;  /* 間隔を半分に */
 }
 
 .section-header h2 {
-  font-size: 2.5rem;
-  color: #1f2937;
-  margin-bottom: 1rem;
+  font-size: 2rem;      /* 少し文字サイズを縮小 */
+  font-weight: 700;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6, #06b6d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.5rem;
 }
 
 .section-header p {
-  font-size: 1.1rem;
-  color: #6b7280;
+  font-size: 1rem;      /* 少し小さめに */
+  color: #4a5568;
+  max-width: 500px;     /* 幅を詰める */
+  margin: 0 auto;
+}
+
+/* ── ３カラムレイアウト ── */
+.activity-sections {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;   /* カラム間のスペースを狭めに */
+}
+
+/* nth-childの特別扱いは不要になったので削除 */
+
+.activity-section {
+  background: #f7fafc;
+  border-radius: 16px;  /* 少し角を小さく */
+  padding: 1.5rem;      /* パディングを詰める */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+  border: 1px solid #e2e8f0;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;         /* アイコンとテキストの間隔を狭め */
+  font-size: 1.4rem;    /* タイトルも少し縮小 */
+  font-weight: 600;
+  margin-bottom: 1rem;  /* 下の余白を詰める */
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.section-icon {
+  font-size: 1.8rem;
 }
 
 .activities-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;            /* カード間を狭め */
 }
 
 .activity-card {
-  background: #f8fafc;
-  border-radius: 16px;
-  padding: 2rem;
-  transition: all 0.3s ease;
-  border: 1px solid #e5e7eb;
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;        /* 内側パディングを詰める */
+  transition: all 0.2s ease;
+  border: 1px solid #e2e8f0;
+  position: relative;
+  overflow: hidden;
+}
+
+.activity-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;                    /* プログレスバー高さを縮小 */
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6, #06b6d4);
+  opacity: 0;
+  transition: opacity 0.2s ease;
 }
 
 .activity-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-  background: white;
+  transform: translateY(-4px);    /* ホバー時の移動を半分に */
+  box-shadow: 0 12px 24px rgba(0,0,0,0.1);
 }
 
-.activity-image {
-  font-size: 3rem;
-  text-align: center;
-  margin-bottom: 1.5rem;
+.activity-card:hover::before {
+  opacity: 1;
 }
 
-.activity-content h3 {
-  font-size: 1.5rem;
-  color: #1f2937;
+.activity-icon {
+  font-size: 2.2rem;   /* アイコンサイズを少し縮小 */
   margin-bottom: 1rem;
   text-align: center;
 }
 
+.activity-content h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
 .activity-content p {
-  color: #4b5563;
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
+  color: #2d3748;
+  line-height: 1.4;
+  font-size: 0.9rem;
 }
 
-.activity-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  justify-content: center;
-}
-
-.tag {
-  background: linear-gradient(135deg, #667eea, #764ba2);
-  color: white;
-  padding: 0.3rem 0.8rem;
-  border-radius: 20px;
-  font-size: 0.8rem;
-  font-weight: 500;
+/* ── レスポンシブ ── */
+@media (max-width: 1024px) {
+  /* タブレットは2列 */
+  .activity-sections {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 768px) {
-  .activities-grid {
+  /* スマホは1列 */
+  .activity-sections {
     grid-template-columns: 1fr;
   }
-  
+
   .section-header h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
+  }
+  .section-title {
+    font-size: 1.3rem;
   }
 }
