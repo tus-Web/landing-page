@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
       <div className="hero-container">
         <div className="hero-content">
           <h1 className="hero-title">
-            <AnimatedText text="創造をともに" delay={0} />
+            <AnimatedText text="未来のソフトウェアを創造しよう" delay={0} />
           </h1>
         </div>
       </div>

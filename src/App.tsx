@@ -15,13 +15,15 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Hero />
-      <About />
-      <Activity />
-      {/* <Voice /> 今後追加予定です */}
-      <JoinFlow />
-      <ApplicationLink />
-      {/* <Contact /> */}
+      <main>
+        <Hero />
+        <About />
+        <Activity />
+        {/* <Voice /> 今後追加予定です */}
+        <JoinFlow />
+        <ApplicationLink />
+        {/* <Contact /> */}
+      </main>
       <Footer />
     </div>
   );
