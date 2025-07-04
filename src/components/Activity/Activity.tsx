@@ -5,29 +5,25 @@ const Activity: React.FC = () => {
   const learningActivities = [
     {
       title: "初心者講習",
-      description: "プログラミング初心者向けに基礎から丁寧に指導します。Web開発の基本からスタート。",
-      icon: "�"
+      description: "プログラミング初心者向けに基礎から丁寧に指導します。Web開発の基本からスタート。"
     }
   ];
 
   const exchangeActivities = [
     {
       title: "学習会",
-      description: "定期的な勉強会やLT大会で知識を共有し、お互いに学び合います。",
-      icon: "💡"
+      description: "定期的な勉強会やLT大会で知識を共有し、お互いに学び合います。"
     }
   ];
 
   const developmentActivities = [
     {
       title: "プロジェクト",
-      description: "チームでWebアプリやモバイルアプリなど様々なプロダクトを開発しています。",
-      icon: "�"
+      description: "チームでWebアプリやモバイルアプリなど様々なプロダクトを開発しています。"
     },
     {
       title: "理大祭",
-      description: "年に一度の理大祭では、制作した作品を展示し、多くの人に見てもらっています。",
-      icon: "🎪"
+      description: "年に一度の理大祭では、制作した作品を展示し、多くの人に見てもらっています。"
     }
   ];
 
@@ -87,7 +83,6 @@ const Activity: React.FC = () => {
             <div className="activities-grid">
               {developmentActivities.map((activity, index) => (
                 <div key={index} className="activity-card">
-                  <div className="activity-icon">{activity.icon}</div>
                   <div className="activity-content">
                     <h4>{activity.title}</h4>
                     <p>{activity.description}</p>
