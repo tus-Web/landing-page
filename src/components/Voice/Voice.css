@@ -1,7 +1,7 @@
 .voice {
   padding: 5rem 0;
-  background: white;
-  color: #333;
+  background: #000000;
+  color: #ffffff;
 }
 
 .voice-container {
@@ -27,7 +27,7 @@
 
 .section-header p {
   font-size: 1.1rem;
-  color: #4a5568;
+  color: #ffffff;
   max-width: 600px;
   margin: 0 auto;
 }

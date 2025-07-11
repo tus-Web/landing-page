@@ -1,7 +1,7 @@
 .join-flow {
   padding: 5rem 0;
-  background: white;
-  color: #333;
+  background: #000000;
+  color: #ffffff;
   position: relative;
   overflow: hidden;
 }
@@ -42,7 +42,7 @@
 
 .section-header p {
   font-size: 1.1rem;
-  color: #4a5568;
+  color: #ffffff;
   max-width: 600px;
   margin: 0 auto;
 }
@@ -56,11 +56,11 @@
 }
 
 .step-card {
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1));
+  background: #1a1a1a;
   border-radius: 20px;
   padding: 2.5rem 2rem;
   text-align: center;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.1);
   position: relative;
   transition: all 0.3s ease;
@@ -81,7 +81,7 @@
 
 .step-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 20px 40px rgba(255, 255, 255, 0.15);
 }
 
 .step-number {
@@ -109,12 +109,12 @@
 .step-content h3 {
   font-size: 1.3rem;
   font-weight: 600;
-  color: #1a202c;
+  color: #ffffff;
   margin-bottom: 1rem;
 }
 
 .step-content p {
-  color: #2d3748;
+  color: #ffffff;
   line-height: 1.6;
   font-size: 0.95rem;
 }
@@ -124,22 +124,22 @@
 }
 
 .cta-section {
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1));
+  background: #1a1a1a;
   border-radius: 20px;
   padding: 3rem 2rem;
   text-align: center;
-  border: 1px solid #e2e8f0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .cta-section h3 {
   font-size: 1.8rem;
   font-weight: 600;
-  color: #1a202c;
+  color: #ffffff;
   margin-bottom: 1rem;
 }
 
 .cta-section p {
-  color: #2d3748;
+  color: #ffffff;
   margin-bottom: 2rem;
   font-size: 1.1rem;
 }

@@ -1,7 +1,7 @@
 .application-link {
   padding: 5rem 0;
-  background: white;
-  color: #333;
+  background: #000000;
+  color: #ffffff;
   position: relative;
   overflow: hidden;
 }
@@ -28,7 +28,7 @@
 .application-content {
   text-align: center;
   background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1));
-  border: 1px solid #e2e8f0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 24px;
   padding: 4rem 3rem;
   backdrop-filter: blur(10px);
@@ -46,7 +46,7 @@
 
 .application-content > p {
   font-size: 1.2rem;
-  color: #2d3748;
+  color: #ffffff;
   line-height: 1.6;
   margin-bottom: 3rem;
 }

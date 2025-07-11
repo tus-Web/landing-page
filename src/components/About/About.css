@@ -1,7 +1,7 @@
 .about {
   padding: 5rem 0;
-  background: white;
-  color: #333;
+  background: #000000;
+  color: #ffffff;
 }
 
 .about-container {
@@ -26,7 +26,7 @@
 
 .section-header p {
   font-size: 1.1rem;
-  color: #4a5568;
+  color: #ffffff;
 }
 
 .about-content{
@@ -35,13 +35,13 @@
 
 .about-text h3 {
   font-size: 1.8rem;
-  color: #1a202c;
+  color: #ffffff;
   margin-bottom: 1.5rem;
 }
 
 .about-text p {
   line-height: 1.7;
-  color: #2d3748;
+  color: #ffffff;
   margin-bottom: 1.5rem;
 }
 
@@ -51,18 +51,18 @@
 }
 
 .feature-card {
-  background: #f7fafc;
+  background: #1a1a1a;
   padding: 2rem;
   margin: 1rem;
   border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.07);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid #e2e8f0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .feature-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.15);
 }
 
 .feature-icon {
@@ -72,12 +72,12 @@
 
 .feature-card h4 {
   font-size: 1.3rem;
-  color: #1a202c;
+  color: #ffffff;
   margin-bottom: 1rem;
 }
 
 .feature-card p {
-  color: #2d3748;
+  color: #ffffff;
   line-height: 1.6;
 }
 
