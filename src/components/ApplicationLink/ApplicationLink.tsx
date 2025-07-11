@@ -19,7 +19,7 @@ const ApplicationLink: React.FC = () => {
               rel="noopener noreferrer"
               className="btn btn-primary"
             >
-              📝 説明会参加申し込み
+              今すぐ参加する
             </a>
             
             <a 
