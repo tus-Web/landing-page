@@ -9,10 +9,6 @@ const Footer: React.FC = () => {
         <div className="footer-content">
           <div className="footer-section">
             <h3>tus.Genesis</h3>
-            <p>
-              次世代のエンジニアを目指す<br />
-              東京理科大学プログラミングサークル
-            </p>
             <div className="social-links">
               <a href="https://twitter.com/tusgenesis" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                 🐦
@@ -40,16 +36,6 @@ const Footer: React.FC = () => {
           </div>
           
           <div className="footer-section">
-            <h4>Activities</h4>
-            <ul>
-              <li><a href="#">勉強会</a></li>
-              <li><a href="#">ハッカソン</a></li>
-              <li><a href="#">プロジェクト開発</a></li>
-              <li><a href="#">技術ブログ</a></li>
-            </ul>
-          </div>
-          
-          <div className="footer-section">
             <h4>Contact Info</h4>
             <ul>
               <li>📧 contact@tusgenesis.org</li>
@@ -63,7 +49,7 @@ const Footer: React.FC = () => {
         <div className="footer-bottom">
           <div className="footer-divider"></div>
           <div className="footer-bottom-content">
-            <p>&copy; {year} Web Circle. All rights reserved.</p>
+            <p>&copy; {year} tus.Genesis All rights reserved.</p>
           </div>
         </div>
       </div>

@@ -13,7 +13,7 @@
 
 .footer-content {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr;
   gap: 3rem;
   margin-bottom: 2rem;
 }
@@ -21,7 +21,7 @@
 .footer-section h3 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
-  background: linear-gradient(90deg, #fbbf24, #f59e0b);
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6, #06b6d4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
