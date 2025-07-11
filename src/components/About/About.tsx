@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaAtlas , FaHandshake , FaTasks} from "react-icons/fa";
+import { IconContext } from 'react-icons'
 import './About.css';
 
 const About: React.FC = () => {
@@ -24,7 +25,9 @@ const About: React.FC = () => {
           <div className="features">
             <div className="feature-card">
               <div className="feature-header">
+                <IconContext.Provider value={{ color: '#457ef6'}}>
                 <div className="feature-icon"><FaAtlas/></div>
+                </IconContext.Provider>
                 <h4>実践的な学習</h4>
               </div>
               <p>実際のプロジェクトを通じて、実務に近い経験を積むことができます。</p>
@@ -32,7 +35,9 @@ const About: React.FC = () => {
             
             <div className="feature-card">
               <div className="feature-header">
+                <IconContext.Provider value={{ color: '#457ef6'}}>
                 <div className="feature-icon"><FaHandshake/></div>
+                </IconContext.Provider>
                 <h4>チーム開発</h4>
               </div>
               <p>GitHubを使ったチーム開発を学び、協力してプロダクトを作り上げます。</p>
@@ -40,7 +45,9 @@ const About: React.FC = () => {
             
             <div className="feature-card">
               <div className="feature-header">
+                <IconContext.Provider value={{ color: '#457ef6'}}>
                 <div className="feature-icon"><FaTasks/></div>
+                </IconContext.Provider>
                 <h4>幅広い技術</h4>
               </div>
               <p>フロントエンドからバックエンドまで、Web開発の全領域をカバーします。</p>
