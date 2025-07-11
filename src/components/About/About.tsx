@@ -22,20 +22,26 @@ const About: React.FC = () => {
           
           <div className="features">
             <div className="feature-card">
-              <div className="feature-icon">🚀</div>
-              <h4>実践的な学習</h4>
+              <div className="feature-header">
+                <div className="feature-icon">🚀</div>
+                <h4>実践的な学習</h4>
+              </div>
               <p>実際のプロジェクトを通じて、実務に近い経験を積むことができます。</p>
             </div>
             
             <div className="feature-card">
-              <div className="feature-icon">👥</div>
-              <h4>チーム開発</h4>
+              <div className="feature-header">
+                <div className="feature-icon">👥</div>
+                <h4>チーム開発</h4>
+              </div>
               <p>GitHubを使ったチーム開発を学び、協力してプロダクトを作り上げます。</p>
             </div>
             
             <div className="feature-card">
-              <div className="feature-icon">📚</div>
-              <h4>幅広い技術</h4>
+              <div className="feature-header">
+                <div className="feature-icon">📚</div>
+                <h4>幅広い技術</h4>
+              </div>
               <p>フロントエンドからバックエンドまで、Web開発の全領域をカバーします。</p>
             </div>
           </div>

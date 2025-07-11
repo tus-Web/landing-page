@@ -41,9 +41,11 @@ const JoinFlow: React.FC = () => {
           {steps.map((step, index) => (
             <div key={index} className="step-card">
               <div className="step-number">{step.number}</div>
-              <div className="step-icon">{step.icon}</div>
-              <div className="step-content">
+              <div className="step-header">
+                <div className="step-icon">{step.icon}</div>
                 <h3>{step.title}</h3>
+              </div>
+              <div className="step-content">
                 <p>{step.description}</p>
               </div>
               {index < steps.length - 1 && (

@@ -50,19 +50,22 @@
 .section-title {
   display: flex;
   align-items: center;
-  flex-direction: column;
-  gap: 0.5rem;
+  gap: 1rem;
   font-size: 1.5rem;
   font-weight: 600;
   color: #ffffff;
   margin-bottom: 2rem;
   padding-bottom: 1rem;
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-  text-align: center;
+}
+
+.section-title h3 {
+  margin: 0;
 }
 
 .section-icon {
   font-size: 1.8rem;
+  flex-shrink: 0;
 }
 
 .activities-grid {
@@ -102,17 +105,23 @@
   opacity: 1;
 }
 
+.activity-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
 .activity-icon {
   font-size: 2.5rem;
-  margin-bottom: 1.5rem;
-  text-align: center;
+  flex-shrink: 0;
 }
 
 .activity-content h4 {
   font-size: 1.2rem;
   font-weight: 600;
   color: #ffffff;
-  margin-bottom: 1rem;
+  margin: 0 0 1rem 0;
 }
 
 .activity-content p {
@@ -153,11 +162,7 @@
   }
 
   .section-title {
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 1rem;
     font-size: 1.7rem;
-    text-align: left;
   }
 
   .section-icon {

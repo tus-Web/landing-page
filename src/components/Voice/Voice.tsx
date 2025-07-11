@@ -12,8 +12,10 @@ const Voice: React.FC = () => {
         
         <div className="coming-soon">
           <div className="coming-soon-content">
-            <div className="coming-soon-icon">🎤</div>
-            <h3>メンバーの声を準備中</h3>
+            <div className="coming-soon-header">
+              <div className="coming-soon-icon">🎤</div>
+              <h3>メンバーの声を準備中</h3>
+            </div>
             <p>
               今後、サークルメンバーの生の声を追加予定です！<br />
               ご期待ください。
