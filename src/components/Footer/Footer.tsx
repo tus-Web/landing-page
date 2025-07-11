@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.css';
+import { FaTwitter, FaGithub, FaDiscord, FaInstagram} from 'react-icons/fa'
 
 const Footer: React.FC = () => {
   const year = new Date().getFullYear();
@@ -11,16 +12,16 @@ const Footer: React.FC = () => {
             <h3>tus.Genesis</h3>
             <div className="social-links">
               <a href="https://twitter.com/tusgenesis" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                🐦
+                <FaTwitter />
               </a>
               <a href="https://github.com/tusgenesis" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                📦
+                <FaGithub />
               </a>
               <a href="https://discord.gg/tusgenesis" target="_blank" rel="noopener noreferrer" aria-label="Discord">
-                💬
+                <FaDiscord />
               </a>
               <a href="https://www.instagram.com/tusgenesis" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                �
+                <FaInstagram />
               </a>
             </div>
           </div>
