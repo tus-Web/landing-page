@@ -43,7 +43,6 @@ const Activity: React.FC = () => {
           {/* 学習セクション */}
           <div className="activity-section">
             <div className="section-title">
-              <span className="section-icon">📚</span>
               <h3>学習</h3>
             </div>
             <div className="activities-grid">
@@ -64,7 +63,6 @@ const Activity: React.FC = () => {
           {/* 交流セクション */}
           <div className="activity-section">
             <div className="section-title">
-              <span className="section-icon">🤝</span>
               <h3>交流</h3>
             </div>
             <div className="activities-grid">
@@ -85,7 +83,6 @@ const Activity: React.FC = () => {
           {/* 開発セクション */}
           <div className="activity-section">
             <div className="section-title">
-              <span className="section-icon">🚀</span>
               <h3>開発</h3>
             </div>
             <div className="activities-grid">
