@@ -6,7 +6,7 @@ const Header: React.FC = () => {
     <header className="header">
       <div className="header-container">
         <div className="logo">
-          <h2>TUS.Genesis</h2>
+          <h2>tus.Genesis</h2>
         </div>
         
         <a href="#contact" className="cta-button">

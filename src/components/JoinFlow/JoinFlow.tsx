@@ -6,7 +6,7 @@ const JoinFlow: React.FC = () => {
     {
       number: "01",
       title: "興味を持つ",
-      description: "まずはTUS.Genesisに興味を持っていただき、活動内容を確認してください。",
+      description: "まずはtus.Genesisに興味を持っていただき、活動内容を確認してください。",
       icon: "💡"
     },
     {
@@ -34,7 +34,7 @@ const JoinFlow: React.FC = () => {
       <div className="join-flow-container">
         <div className="section-header">
           <h2>参加の流れ</h2>
-          <p>TUS.Genesisに参加するまでの簡単なステップ</p>
+          <p>tus.Genesisに参加するまでの簡単なステップ</p>
         </div>
         
         <div className="steps-container">

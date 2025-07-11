@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
       <div className="footer-container">
         <div className="footer-content">
           <div className="footer-section">
-            <h3>TUS.Genesis</h3>
+            <h3>tus.Genesis</h3>
             <p>
               次世代のエンジニアを目指す<br />
               東京理科大学プログラミングサークル

@@ -34,9 +34,9 @@ const Contact: React.FC = () => {
         
         <div className="contact-content">
           <div className="contact-info">
-            <h3>TUS.Genesisへの参加をお考えの方へ</h3>
+            <h3>tus.Genesisへの参加をお考えの方へ</h3>
             <p>
-              TUS.Genesisへの参加に興味をお持ちいただき、ありがとうございます！
+              tus.Genesisへの参加に興味をお持ちいただき、ありがとうございます！
               プログラミング初心者の方も大歓迎です。まずはお気軽にご連絡ください。
             </p>
             
