@@ -16,7 +16,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('data:image/svg+xml,<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%23ffffff" fill-opacity="0.05"><circle cx="30" cy="30" r="1.5"/></g></svg>');
+  background: url('data:image/svg+xml,<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w   3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%23ffffff" fill-opacity="0.05"><circle cx="30" cy="30" r="1.5"/></g></svg>');
   opacity: 0.5;
 }
 
@@ -41,10 +41,11 @@
   font-weight: 900;
   line-height: 1.1;
   margin-bottom: 1.5rem;
-  font-family: 'Inter', 'SF Pro Display', 'Segoe UI', 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+  /* font-family: 'Inter', 'SF Pro Display', 'Segoe UI', 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif; */
   letter-spacing: -0.025em;
   animation: gradientShift 3s ease-in-out infinite;
   color: white;
+  font-family: serif;
 }
 
 .hero-description {
