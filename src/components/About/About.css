@@ -1,5 +1,6 @@
+/* --- デフォルト（スマホ用） --- */
 .about {
-  padding: 5rem 0;
+  padding: 3rem 0;
   background: #000000;
   color: #ffffff;
 }
@@ -7,16 +8,16 @@
 .about-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 
 .section-header {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .section-header h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   background: linear-gradient(135deg, #3b82f6, #8b5cf6, #06b6d4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -25,16 +26,16 @@
 }
 
 .section-header p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #ffffff;
 }
 
-.about-content{
+.about-content {
   align-items: start;
 }
 
 .about-text h3 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: #ffffff;
   margin-bottom: 1.5rem;
 }
@@ -47,13 +48,14 @@
 
 .features {
   display: flex;
-  gap: 2rem;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .feature-card {
   background: #1a1a1a;
-  padding: 2rem;
-  margin: 1rem;
+  padding: 1.5rem;
+  margin: 0.5rem;
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(255, 255, 255, 0.07);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -66,12 +68,12 @@
 }
 
 .feature-icon {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 
 .feature-card h4 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: #ffffff;
   margin-bottom: 1rem;
 }
@@ -81,13 +83,91 @@
   line-height: 1.6;
 }
 
-@media (max-width: 768px) {
-  .about-content {
-    grid-template-columns: 1fr;
-    gap: 3rem;
+/* --- タブレット以上のサイズ --- */
+@media (min-width: 768px) {
+  .about {
+    padding: 4rem 0;
   }
-  
+
+  .about-container {
+    padding: 0 1.5rem;
+  }
+
+  .section-header {
+    margin-bottom: 3.5rem;
+  }
+
   .section-header h2 {
-    font-size: 2rem;
+    font-size: 2.3rem;
+  }
+
+  .section-header p {
+    font-size: 1.05rem;
+  }
+
+  .about-text h3 {
+    font-size: 1.7rem;
+  }
+
+  .features {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  .feature-card {
+    padding: 1.8rem;
+    margin: 0.8rem;
+  }
+
+  .feature-icon {
+    font-size: 2.3rem;
+  }
+
+  .feature-card h4 {
+    font-size: 1.25rem;
+  }
+}
+
+/* --- PC以上のサイズ --- */
+@media (min-width: 1024px) {
+  .about {
+    padding: 5rem 0;
+  }
+
+  .about-container {
+    padding: 0 2rem;
+  }
+
+  .section-header {
+    margin-bottom: 4rem;
+  }
+
+  .section-header h2 {
+    font-size: 2.5rem;
+  }
+
+  .section-header p {
+    font-size: 1.1rem;
+  }
+
+  .about-text h3 {
+    font-size: 1.8rem;
+  }
+
+  .features {
+    gap: 2rem;
+  }
+
+  .feature-card {
+    padding: 2rem;
+    margin: 1rem;
+  }
+
+  .feature-icon {
+    font-size: 2.5rem;
+  }
+
+  .feature-card h4 {
+    font-size: 1.3rem;
   }
 }

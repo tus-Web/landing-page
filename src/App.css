@@ -11,18 +11,24 @@
   background-color: #000000;
 }
 
-/* レスポンシブ対応 */
-@media (max-width: 768px) {
-  .about-activity-container {
-    flex-direction: column;
-    min-height: auto;
-  }
-}
-
 html {
   scroll-behavior: smooth;
 }
 
 body {
   overflow-x: hidden;
+}
+
+/* --- タブレット以上のサイズ --- */
+@media (min-width: 768px) {
+  .about-activity-container {
+    flex-direction: row;
+  }
+}
+
+/* --- PC以上のサイズ --- */
+@media (min-width: 1024px) {
+  .about-activity-container {
+    min-height: auto;
+  }
 }

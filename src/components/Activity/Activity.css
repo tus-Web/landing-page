@@ -1,5 +1,6 @@
+/* --- デフォルト（スマホ用） --- */
 .activity {
-  padding: 5rem 0;
+  padding: 3rem 0;
   background: #000000;
   color: #ffffff;
 }
@@ -7,16 +8,16 @@
 .activity-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 
 .section-header {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .section-header h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   background: linear-gradient(135deg, #3b82f6, #8b5cf6, #06b6d4);
   -webkit-background-clip: text;
@@ -26,7 +27,7 @@
 }
 
 .section-header p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #ffffff;
   max-width: 600px;
   margin: 0 auto;
@@ -35,13 +36,13 @@
 .activity-sections {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 3rem;
 }
 
 .activity-section {
   background: #1a1a1a;
-  border-radius: 20px;
-  padding: 3rem;
+  border-radius: 16px;
+  padding: 2rem;
   box-shadow: 0 10px 30px rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -49,29 +50,31 @@
 .section-title {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  font-size: 1.8rem;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 1.5rem;
   font-weight: 600;
   color: #ffffff;
   margin-bottom: 2rem;
   padding-bottom: 1rem;
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
 }
 
 .section-icon {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .activities-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
 }
 
 .activity-card {
   background: #000000;
   border-radius: 16px;
-  padding: 2rem;
+  padding: 1.5rem;
   transition: all 0.3s ease;
   border: 1px solid rgba(255, 255, 255, 0.1);
   position: relative;
@@ -100,13 +103,13 @@
 }
 
 .activity-icon {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 1.5rem;
   text-align: center;
 }
 
 .activity-content h4 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: #ffffff;
   margin-bottom: 1rem;
@@ -115,46 +118,130 @@
 .activity-content p {
   color: #ffffff;
   line-height: 1.6;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
 }
 
-/* レスポンシブ対応 */
-@media (max-width: 768px) {
+/* --- タブレット以上のサイズ --- */
+@media (min-width: 768px) {
   .activity {
-    padding: 3rem 0;
+    padding: 4rem 0;
   }
 
   .activity-container {
-    padding: 0 1rem;
+    padding: 0 1.5rem;
+  }
+
+  .section-header {
+    margin-bottom: 3.5rem;
   }
 
   .section-header h2 {
-    font-size: 2rem;
+    font-size: 2.3rem;
   }
 
-  .section-title {
-    font-size: 1.5rem;
-    flex-direction: column;
-    text-align: center;
-    gap: 0.5rem;
-  }
-
-  .activity-section {
-    padding: 2rem;
-    border-radius: 16px;
-  }
-
-  .activities-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-
-  .activity-card {
-    padding: 1.5rem;
+  .section-header p {
+    font-size: 1.05rem;
   }
 
   .activity-sections {
-    gap: 3rem;
+    gap: 3.5rem;
   }
-  
+
+  .activity-section {
+    padding: 2.5rem;
+    border-radius: 18px;
+  }
+
+  .section-title {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1rem;
+    font-size: 1.7rem;
+    text-align: left;
+  }
+
+  .section-icon {
+    font-size: 1.9rem;
+  }
+
+  .activities-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.8rem;
+  }
+
+  .activity-card {
+    padding: 1.8rem;
+  }
+
+  .activity-icon {
+    font-size: 2.8rem;
+  }
+
+  .activity-content h4 {
+    font-size: 1.25rem;
+  }
+
+  .activity-content p {
+    font-size: 0.92rem;
+  }
+}
+
+/* --- PC以上のサイズ --- */
+@media (min-width: 1024px) {
+  .activity {
+    padding: 5rem 0;
+  }
+
+  .activity-container {
+    padding: 0 2rem;
+  }
+
+  .section-header {
+    margin-bottom: 4rem;
+  }
+
+  .section-header h2 {
+    font-size: 2.5rem;
+  }
+
+  .section-header p {
+    font-size: 1.1rem;
+  }
+
+  .activity-sections {
+    gap: 4rem;
+  }
+
+  .activity-section {
+    padding: 3rem;
+    border-radius: 20px;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .section-icon {
+    font-size: 2rem;
+  }
+
+  .activities-grid {
+    gap: 2rem;
+  }
+
+  .activity-card {
+    padding: 2rem;
+  }
+
+  .activity-icon {
+    font-size: 3rem;
+  }
+
+  .activity-content h4 {
+    font-size: 1.3rem;
+  }
+
+  .activity-content p {
+    font-size: 0.95rem;
+  }
 }
