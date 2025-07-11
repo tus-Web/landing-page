@@ -9,7 +9,7 @@ const ApplicationLink: React.FC = () => {
           <h2>今すぐ参加しよう</h2>
           <p>
             tus.Genesisで一緒に「想像をともに」創造しませんか？<br />
-            説明会への参加申し込みや気軽な質問もお待ちしています。
+            説明会への参加申し込みをお待ちしています！
           </p>
           
           <div className="application-buttons">
@@ -20,15 +20,6 @@ const ApplicationLink: React.FC = () => {
               className="btn btn-primary"
             >
               今すぐ参加する
-            </a>
-            
-            <a 
-              href="https://line.me/your-line-link" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="btn btn-secondary"
-            >
-              💬 気軽に質問する
             </a>
           </div>
         </div>
