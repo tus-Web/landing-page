@@ -5,5 +5,6 @@ export { default as Activity } from './Activity';
 export { default as Voice } from './Voice';
 export { default as JoinFlow } from './JoinFlow';
 export { default as ApplicationLink } from './ApplicationLink';
+export { default as FAQ } from './FAQ';
 export { default as Contact } from './Contact';
 export { default as Footer } from './Footer';
