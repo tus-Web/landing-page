@@ -22,6 +22,26 @@
   gap: 0.5rem;
 }
 
+.logo-content {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+
+
+.logo-text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-subtitle {
+  font-size: 0.7rem;
+  color: #ffffff;
+  opacity: 0.8;
+  margin-bottom: -0.2rem;
+}
+
 .logo h2 {
   color: #ffffff;
   margin: 0;

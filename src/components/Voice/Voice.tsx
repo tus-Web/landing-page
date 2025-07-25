@@ -1,5 +1,6 @@
 import React from 'react';
 import './Voice.css';
+import { FaMicrophone, FaUser } from 'react-icons/fa';
 
 const Voice: React.FC = () => {
   return (
@@ -13,7 +14,7 @@ const Voice: React.FC = () => {
         <div className="coming-soon">
           <div className="coming-soon-content">
             <div className="coming-soon-header">
-              <div className="coming-soon-icon">🎤</div>
+              <div className="coming-soon-icon"><FaMicrophone /></div>
               <h3>メンバーの声を準備中</h3>
             </div>
             <p>
@@ -25,7 +26,7 @@ const Voice: React.FC = () => {
 
         <div className="placeholder-members">
           <div className="member-card placeholder">
-            <div className="member-avatar">👤</div>
+            <div className="member-avatar"><FaUser /></div>
             <div className="member-info">
               <h4>メンバーA</h4>
               <p className="member-year">2年生</p>
@@ -36,7 +37,7 @@ const Voice: React.FC = () => {
           </div>
 
           <div className="member-card placeholder">
-            <div className="member-avatar">👤</div>
+            <div className="member-avatar"><FaUser /></div>
             <div className="member-info">
               <h4>メンバーB</h4>
               <p className="member-year">3年生</p>
@@ -47,7 +48,7 @@ const Voice: React.FC = () => {
           </div>
 
           <div className="member-card placeholder">
-            <div className="member-avatar">👤</div>
+            <div className="member-avatar"><FaUser /></div>
             <div className="member-info">
               <h4>メンバーC</h4>
               <p className="member-year">1年生</p>

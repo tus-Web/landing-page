@@ -7,7 +7,10 @@ const Header: React.FC = () => {
       <div className="header-container">
         <div className="logo">
           <div className="logo-content">
-            <h2>tus.Genesis</h2>
+            <div className="logo-text-container">
+              <span className="logo-subtitle">理科大テックコミュニティ</span>
+              <h2>tus.Genesis</h2>
+            </div>
           </div>
         </div>
 

@@ -53,13 +53,14 @@
 .coming-soon-icon {
   font-size: 4rem;
   flex-shrink: 0;
+  color: #8b5cf6;
 }
 
 .coming-soon-content h3 {
   font-size: 1.8rem;
   font-weight: 600;
   margin: 0;
-  color: black;
+  color: #ffffff;
 }
 
 .coming-soon-content p {
@@ -125,7 +126,7 @@
 .member-info h4 {
   font-size: 1.3rem;
   font-weight: 600;
-  color: black;
+  color: #ffffff;
   margin-bottom: 0.5rem;
 }
 

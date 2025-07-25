@@ -5,26 +5,26 @@ const JoinFlow: React.FC = () => {
   const steps = [
     {
       number: "01",
-      title: "興味を持つ",
-      description: "まずはtus.Genesisに興味を持っていただき、活動内容を確認してください。",
-      icon: "💡"
+      title: "申し込みボタンを押す",
+      description: "まずはページ下部の申し込みボタンから申し込みフォームへ進んでください。",
+      icon: "🖱️"
     },
     {
       number: "02",
-      title: "説明会参加",
-      description: "定期的に開催している説明会に参加して、詳しい活動内容を聞いてみましょう。",
-      icon: "👥"
+      title: "公式LINEを友達追加",
+      description: "フォーム入力後、表示されるQRコードから公式LINEを友達追加してください。",
+      icon: "💬"
     },
     {
       number: "03",
-      title: "体験参加",
-      description: "実際の活動に体験参加して、雰囲気や内容を体感してください。",
+      title: "体験参加してみる",
+      description: "LINEで案内される活動に体験参加して、サークルの雰囲気を掴んでみましょう。",
       icon: "🚀"
     },
     {
       number: "04",
-      title: "正式入会",
-      description: "気に入ったら正式に入会！一緒にプログラミングスキルを向上させましょう。",
+      title: "実際に入る！",
+      description: "体験して気に入ったら正式に入会！一緒にスキルアップしていきましょう。",
       icon: "🎉"
     }
   ];

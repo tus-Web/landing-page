@@ -3,23 +3,14 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: black;
+  background: url('/hero-background.jpg') no-repeat center center/cover;
   color: white;
   padding-top: 80px;
   position: relative;
   overflow: hidden;
 }
 
-.hero::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('data:image/svg+xml,<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%23ffffff" fill-opacity="0.05"><circle cx="30" cy="30" r="1.5"/></g></svg>');
-  opacity: 0.5;
-}
+
 
 .hero-container {
   max-width: 1200px;
@@ -147,6 +138,13 @@
   line-height: 1.6;
   backdrop-filter: blur(10px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  animation: float 3s ease-in-out infinite;
+}
+
+.hero-code-icon {
+  font-size: 15rem;
+  color: #8b5cf6;
+  opacity: 0.1;
   animation: float 3s ease-in-out infinite;
 }
 

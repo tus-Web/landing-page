@@ -1,5 +1,6 @@
 import React from 'react';
 import './Hero.css';
+import { FaCode } from 'react-icons/fa';
 
 const AnimatedText: React.FC<{ text: string; delay?: number }> = ({ text, delay = 0 }) => (
   <>
@@ -9,7 +10,7 @@ const AnimatedText: React.FC<{ text: string; delay?: number }> = ({ text, delay 
         className="letter"
         style={{ animationDelay: `${delay + index * 0.08}s` }}
       >
-        {char === ' ' ? '\u00A0' : char}
+        {char === ' ' ? ' ' : char}
       </span>
     ))}
   </>
@@ -23,6 +24,9 @@ const Hero: React.FC = () => {
           <h1 className="hero-title">
             <AnimatedText text="Create with us" delay={0} />
           </h1>
+        </div>
+        <div className="hero-image">
+          <FaCode className="hero-code-icon" />
         </div>
       </div>
     </section>

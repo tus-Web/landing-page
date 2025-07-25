@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './Contact.css';
 
+import { FaEnvelope, FaUserFriends, FaMapMarkerAlt, FaClock } from 'react-icons/fa';
+
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -42,7 +44,7 @@ const Contact: React.FC = () => {
             
             <div className="contact-details">
               <div className="contact-item">
-                <div className="contact-icon">📧</div>
+                <div className="contact-icon"><FaEnvelope /></div>
                 <div>
                   <h4>Email</h4>
                   <p>contact@tusgenesis.org</p>
@@ -50,7 +52,7 @@ const Contact: React.FC = () => {
               </div>
               
               <div className="contact-item">
-                <div className="contact-icon">📱</div>
+                <div className="contact-icon"><FaUserFriends /></div>
                 <div>
                   <h4>SNS</h4>
                   <p>@tusgenesis</p>
@@ -58,7 +60,7 @@ const Contact: React.FC = () => {
               </div>
               
               <div className="contact-item">
-                <div className="contact-icon">📍</div>
+                <div className="contact-icon"><FaMapMarkerAlt /></div>
                 <div>
                   <h4>活動場所</h4>
                   <p>東京理科大学 野田キャンパス</p>
@@ -66,7 +68,7 @@ const Contact: React.FC = () => {
               </div>
               
               <div className="contact-item">
-                <div className="contact-icon">🕒</div>
+                <div className="contact-icon"><FaClock /></div>
                 <div>
                   <h4>活動時間</h4>
                   <p>毎週水曜日 18:00-20:00</p>

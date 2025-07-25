@@ -22,10 +22,10 @@ const About: React.FC = () => {
               </p>
           </div>
           
-          {/* <div className="features">
+          <div className="features">
             <div className="feature-card">
               <div className="feature-header">
-                <IconContext.Provider value={{ color: '#457ef6'}}>
+                <IconContext.Provider value={{ color: '#8b5cf6'}}>
                 <div className="feature-icon"><FaAtlas/></div>
                 </IconContext.Provider>
                 <h4>実践的な学習</h4>
@@ -35,7 +35,7 @@ const About: React.FC = () => {
             
             <div className="feature-card">
               <div className="feature-header">
-                <IconContext.Provider value={{ color: '#457ef6'}}>
+                <IconContext.Provider value={{ color: '#8b5cf6'}}>
                 <div className="feature-icon"><FaHandshake/></div>
                 </IconContext.Provider>
                 <h4>チーム開発</h4>
@@ -45,14 +45,14 @@ const About: React.FC = () => {
             
             <div className="feature-card">
               <div className="feature-header">
-                <IconContext.Provider value={{ color: '#457ef6'}}>
+                <IconContext.Provider value={{ color: '#8b5cf6'}}>
                 <div className="feature-icon"><FaTasks/></div>
                 </IconContext.Provider>
                 <h4>幅広い技術</h4>
               </div>
               <p>フロントエンドからバックエンドまで、Web開発の全領域をカバーします。</p>
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
     </section>
