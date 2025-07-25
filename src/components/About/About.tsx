@@ -22,7 +22,7 @@ const About: React.FC = () => {
               </p>
           </div>
           
-          <div className="features">
+          {/* <div className="features">
             <div className="feature-card">
               <div className="feature-header">
                 <IconContext.Provider value={{ color: '#457ef6'}}>
@@ -52,7 +52,7 @@ const About: React.FC = () => {
               </div>
               <p>フロントエンドからバックエンドまで、Web開発の全領域をカバーします。</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

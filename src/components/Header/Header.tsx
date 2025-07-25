@@ -10,8 +10,8 @@ const Header: React.FC = () => {
             <h2>tus.Genesis</h2>
           </div>
         </div>
-        
-        <a href="#contact" className="cta-button">
+
+        <a href="#application" className="cta-button">
           今すぐ申し込む
         </a>
       </div>
