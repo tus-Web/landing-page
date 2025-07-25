@@ -1,6 +1,7 @@
 import React from 'react';
 import './Footer.css';
-import { FaTwitter, FaGithub, FaDiscord, FaInstagram} from 'react-icons/fa'
+import { FaGithub, FaLine, FaInstagram} from 'react-icons/fa'
+import { FaXTwitter } from 'react-icons/fa6';
 
 const Footer: React.FC = () => {
   const year = new Date().getFullYear();
@@ -11,17 +12,17 @@ const Footer: React.FC = () => {
           <div className="footer-section">
             <h3>tus.Genesis</h3>
             <div className="social-links">
-              <a href="https://twitter.com/tusgenesis" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                <FaTwitter />
+              <a href="https://x.com/tus_Genesis" target="_blank" rel="noopener noreferrer" aria-label="X">
+                <FaXTwitter className='footer-icon' />
               </a>
-              <a href="https://github.com/tusgenesis" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                <FaGithub />
+              <a href="https://github.com/tus-Web" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <FaGithub className='footer-icon' />
               </a>
-              <a href="https://discord.gg/tusgenesis" target="_blank" rel="noopener noreferrer" aria-label="Discord">
-                <FaDiscord />
+              <a href="https://lin.ee/lfc18V0" target="_blank" rel="noopener noreferrer" aria-label="Line">
+                <FaLine className='footer-icon' />
               </a>
-              <a href="https://www.instagram.com/tusgenesis" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                <FaInstagram />
+              <a href="https://www.instagram.com/tus.genesis/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <FaInstagram className='footer-icon' />
               </a>
             </div>
           </div>
@@ -33,16 +34,6 @@ const Footer: React.FC = () => {
               <li><a href="#activity">活動</a></li>
               <li><a href="#flow">参加の流れ</a></li>
               <li><a href="#contact">お問い合わせ</a></li>
-            </ul>
-          </div>
-          
-          <div className="footer-section">
-            <h4>Contact Info</h4>
-            <ul>
-              <li>📧 contact@tusgenesis.org</li>
-              <li>📱 @tusgenesis</li>
-              <li>📍 東京理科大学 葛飾キャンパス</li>
-              <li>🕒 毎週金曜日 18:00-20:00</li>
             </ul>
           </div>
         </div>
