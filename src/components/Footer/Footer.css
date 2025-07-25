@@ -84,6 +84,10 @@
   transform: translateY(-2px);
 }
 
+.footer-icon {
+  color: #8b5cf6;
+}
+
 .footer-divider {
   height: 1px;
   background: linear-gradient(90deg, transparent, #ffffff, transparent);
