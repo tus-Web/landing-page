@@ -14,7 +14,7 @@ const About: React.FC = () => {
         
         <div className="about-content">
           <div className="about-text">
-            <h3>エンジニアリングで未来を創造</h3>
+            <h3>次はあなたの創造で、</h3>
             <p>
               tus.Genesisでは、プログラミング技術を学び、実践的なプロジェクトを通じて
               スキルアップを目指しています。Web開発、モバイルアプリ開発を軸に活動しています。
