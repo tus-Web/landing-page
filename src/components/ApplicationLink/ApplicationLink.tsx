@@ -14,7 +14,7 @@ const ApplicationLink: React.FC = () => {
           
           <div className="application-buttons">
             <a 
-              href="https://forms.google.com/your-form-id" 
+              href="https://lin.ee/lfc18V0" 
               target="_blank" 
               rel="noopener noreferrer"
               className="btn btn-primary"
