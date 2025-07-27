@@ -9,7 +9,6 @@ const About: React.FC = () => {
       <div className="about-container">
         <div className="section-header">
           <h2>tus.Genesisについて</h2>
-          <p>私たちのサークルについて</p>
         </div>
         
         <div className="about-content">
