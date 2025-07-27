@@ -1,6 +1,6 @@
 import React from 'react';
-import { FaAtlas , FaHandshake , FaTasks} from "react-icons/fa";
-import { IconContext } from 'react-icons'
+// import { FaAtlas , FaHandshake , FaTasks} from "react-icons/fa";
+// import { IconContext } from 'react-icons'
 import './About.css';
 
 const About: React.FC = () => {
