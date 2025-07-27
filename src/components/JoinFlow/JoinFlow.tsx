@@ -7,25 +7,21 @@ const JoinFlow: React.FC = () => {
     //   number: "01",
     //   title: "申し込みボタンを押す",
     //   description: "まずはページ下部の申し込みボタンから申し込みフォームへ進んでください。",
-    //   icon: "🖱️"
     // },
     {
       number: "1",
       title: "公式LINEを友達追加",
       description: "まずは右上のLINE登録ボタンから、公式LINEを友達追加してください。公式LINEでは、活動の案内や質問対応を行っています。",
-      icon: "💬"
     },
     {
       number: "2",
       title: "体験参加してみる",
       description: "LINEで案内される活動に体験参加して、サークルの雰囲気を掴んでみましょう。",
-      icon: "🚀"
     },
     {
       number: "3",
       title: "実際に入る！",
       description: "体験して気に入ったら正式に入会！一緒にスキルアップしていきましょう。",
-      icon: "🎉"
     }
   ];
 
@@ -42,7 +38,6 @@ const JoinFlow: React.FC = () => {
             <div key={index} className="step-card">
               <div className="step-number">{step.number}</div>
               <div className="step-header">
-                <div className="step-icon">{step.icon}</div>
                 <h3>{step.title}</h3>
               </div>
               <div className="step-content">

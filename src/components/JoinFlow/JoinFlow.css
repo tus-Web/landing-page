@@ -49,11 +49,11 @@
 }
 
 .steps-container {
-  display: grid;
-  grid-template-columns: 1fr;
   gap: 1.5rem;
   margin-bottom: 3rem;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .step-card {
@@ -108,11 +108,6 @@
   gap: 1rem;
   margin-bottom: 1.5rem;
   justify-content: center;
-}
-
-.step-icon {
-  font-size: 2.5rem;
-  flex-shrink: 0;
 }
 
 .step-content h3 {

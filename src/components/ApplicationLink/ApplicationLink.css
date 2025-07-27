@@ -4,7 +4,6 @@
   color: #ffffff;
   position: relative;
   overflow: hidden;
-  min-height: calc(100vh - 4rem);
 }
 
 .application-link::before {
