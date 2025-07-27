@@ -19,7 +19,7 @@ const ApplicationLink: React.FC = () => {
               rel="noopener noreferrer"
               className="btn btn-primary"
             >
-              公式LINEはこちら
+              公式LINEを友達追加しよう
             </a>
           </div>
         </div>
