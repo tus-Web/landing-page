@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
               <li><a href="#about">概要</a></li>
               <li><a href="#activity">活動</a></li>
               <li><a href="#join">参加の流れ</a></li>
-              <li><a href="#application">申込</a></li>
+              <li><a href="#application">公式LINEはこちら</a></li>
             </ul>
           </div>
         </div>

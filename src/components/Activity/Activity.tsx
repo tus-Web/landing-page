@@ -46,7 +46,6 @@ const Activity: React.FC = () => {
       <div className="activity-container">
         <div className="section-header">
           <h2>活動内容</h2>
-          <p>私たちの主な活動について</p>
         </div>
 
         <div className="activity-sections">

@@ -3,26 +3,26 @@ import './JoinFlow.css';
 
 const JoinFlow: React.FC = () => {
   const steps = [
+    // {
+    //   number: "01",
+    //   title: "申し込みボタンを押す",
+    //   description: "まずはページ下部の申し込みボタンから申し込みフォームへ進んでください。",
+    //   icon: "🖱️"
+    // },
     {
-      number: "01",
-      title: "申し込みボタンを押す",
-      description: "まずはページ下部の申し込みボタンから申し込みフォームへ進んでください。",
-      icon: "🖱️"
-    },
-    {
-      number: "02",
+      number: "1",
       title: "公式LINEを友達追加",
-      description: "フォーム入力後、表示されるQRコードから公式LINEを友達追加してください。",
+      description: "まずは右上のLINE登録ボタンから、公式LINEを友達追加してください。公式LINEでは、活動の案内や質問対応を行っています。",
       icon: "💬"
     },
     {
-      number: "03",
+      number: "2",
       title: "体験参加してみる",
       description: "LINEで案内される活動に体験参加して、サークルの雰囲気を掴んでみましょう。",
       icon: "🚀"
     },
     {
-      number: "04",
+      number: "3",
       title: "実際に入る！",
       description: "体験して気に入ったら正式に入会！一緒にスキルアップしていきましょう。",
       icon: "🎉"
