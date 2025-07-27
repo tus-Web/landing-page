@@ -15,14 +15,14 @@ const Footer: React.FC = () => {
               <a href="https://x.com/tus_Genesis" target="_blank" rel="noopener noreferrer" aria-label="X">
                 <FaXTwitter className='footer-icon' />
               </a>
-              <a href="https://github.com/tus-Web" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                <FaGithub className='footer-icon' />
+              <a href="https://www.instagram.com/tus.genesis/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <FaInstagram className='footer-icon' />
               </a>
               <a href="https://lin.ee/lfc18V0" target="_blank" rel="noopener noreferrer" aria-label="Line">
                 <FaLine className='footer-icon' />
               </a>
-              <a href="https://www.instagram.com/tus.genesis/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                <FaInstagram className='footer-icon' />
+              <a href="https://github.com/tus-Web" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <FaGithub className='footer-icon' />
               </a>
             </div>
           </div>
@@ -32,8 +32,8 @@ const Footer: React.FC = () => {
             <ul>
               <li><a href="#about">概要</a></li>
               <li><a href="#activity">活動</a></li>
-              <li><a href="#flow">参加の流れ</a></li>
-              <li><a href="#contact">お問い合わせ</a></li>
+              <li><a href="#join">参加の流れ</a></li>
+              <li><a href="#application">申込</a></li>
             </ul>
           </div>
         </div>
