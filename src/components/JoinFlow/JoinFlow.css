@@ -261,7 +261,7 @@
   }
 
   .steps-container {
-    grid-template-columns: repeat(4, 1fr);
+    flex-wrap: nowrap;
     gap: 1rem;
     margin-bottom: 4rem;
   }
