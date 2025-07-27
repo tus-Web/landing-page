@@ -3,14 +3,22 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: url('/hero-background.jpg') no-repeat center center/cover;
   color: white;
   padding-top: 80px;
   position: relative;
   overflow: hidden;
 }
 
-
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 0;
+}
 
 .hero-container {
   max-width: 1200px;
@@ -27,6 +35,9 @@
 
 .hero-content {
   animation: fadeInUp 1s ease-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero-title {
@@ -38,13 +49,6 @@
   animation: gradientShift 3s ease-in-out infinite;
   color: white;
   font-family: serif;
-}
-
-.hero-description {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 2rem;
-  opacity: 0.9;
 }
 
 .hero-buttons {
@@ -211,9 +215,7 @@
     letter-spacing: -0.025em;
   }
 
-  .hero-description {
-    font-size: 1.1rem;
-  }
+  
 
   .hero-buttons {
     flex-direction: row;

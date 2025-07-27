@@ -24,6 +24,11 @@ const Hero: React.FC = () => {
           <h1 className="hero-title">
             <AnimatedText text="Create with us" delay={0} />
           </h1>
+          <div className="hero-buttons">
+            <a href="#application" className="btn btn-primary">
+              今すぐ申し込む
+            </a>
+          </div>
         </div>
         <div className="hero-image">
           <FaCode className="hero-code-icon" />
