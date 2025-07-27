@@ -28,12 +28,20 @@ const Footer: React.FC = () => {
           </div>
           
           <div className="footer-section">
-            <h4>ナビゲーション</h4>
+            <h4>site map</h4>
             <ul>
               <li><a href="#about">概要</a></li>
               <li><a href="#activity">活動</a></li>
               <li><a href="#join">参加の流れ</a></li>
               <li><a href="#application">公式LINEはこちら</a></li>
+            </ul>
+          </div>
+          <div className="footer-section">
+            <h4>Contact Info</h4>
+            <ul>
+              <li>tus.genesis@gmail.com</li>
+              <li>東京理科大学 葛飾キャンパス</li>
+              <li>毎週金曜日 18:00-20:00</li>
             </ul>
           </div>
         </div>
