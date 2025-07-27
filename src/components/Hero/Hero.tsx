@@ -1,6 +1,5 @@
 import React from 'react';
 import './Hero.css';
-import { FaCode } from 'react-icons/fa';
 
 const AnimatedText: React.FC<{ text: string; delay?: number }> = ({ text, delay = 0 }) => (
   <>
@@ -10,7 +9,7 @@ const AnimatedText: React.FC<{ text: string; delay?: number }> = ({ text, delay 
         className="letter"
         style={{ animationDelay: `${delay + index * 0.08}s` }}
       >
-        {char === ' ' ? ' ' : char}
+        {char === ' ' ? ' ' : char}
       </span>
     ))}
   </>
@@ -22,16 +21,16 @@ const Hero: React.FC = () => {
       <div className="hero-container">
         <div className="hero-content">
           <h1 className="hero-title">
-            <AnimatedText text="Create with us" delay={0} />
+            <AnimatedText text="tus.Genesis" delay={0} />
           </h1>
+          <p className="hero-subtitle">
+            <AnimatedText text="共に創り、共に高める開発サークル" delay={0.5} />
+          </p>
           <div className="hero-buttons">
             <a href="#application" className="btn btn-primary">
               公式LINEはこちら
             </a>
           </div>
-        </div>
-        <div className="hero-image">
-          <FaCode className="hero-code-icon" />
         </div>
       </div>
     </section>

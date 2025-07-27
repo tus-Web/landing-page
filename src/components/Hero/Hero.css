@@ -7,6 +7,10 @@
   padding-top: 80px;
   position: relative;
   overflow: hidden;
+  background-image: url('../../assets/hero-background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero::after {
@@ -41,14 +45,23 @@
 }
 
 .hero-title {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: 900;
   line-height: 1.1;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   letter-spacing: -0.02em;
   animation: gradientShift 3s ease-in-out infinite;
   color: white;
   font-family: serif;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  color: white;
+  opacity: 0.9;
 }
 
 .hero-buttons {
@@ -120,37 +133,7 @@
   letter-spacing: 1px;
 }
 
-.hero-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: fadeInRight 1s ease-out 0.3s both;
-}
 
-.hero-visual {
-  position: relative;
-  perspective: 1000px;
-}
-
-.code-block {
-  background: rgba(15, 23, 42, 0.8);
-  border: 1px solid rgba(99, 102, 241, 0.3);
-  border-radius: 12px;
-  padding: 1.5rem;
-  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
-  font-size: 0.8rem;
-  line-height: 1.6;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-  animation: float 3s ease-in-out infinite;
-}
-
-.hero-code-icon {
-  font-size: 15rem;
-  color: #8b5cf6;
-  opacity: 0.1;
-  animation: float 3s ease-in-out infinite;
-}
 
 .letter {
   display: inline-block;
@@ -211,11 +194,13 @@
   }
 
   .hero-title {
-    font-size: 3rem;
+    font-size: 4.5rem;
     letter-spacing: -0.025em;
   }
 
-  
+  .hero-subtitle {
+    font-size: 1.5rem;
+  }
 
   .hero-buttons {
     flex-direction: row;
@@ -249,12 +234,16 @@
 @media (min-width: 1024px) {
   .hero-container {
     padding: 0 2rem;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 4rem;
   }
 
   .hero-title {
-    font-size: 3.5rem;
+    font-size: 5.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.8rem;
   }
 
   .hero-description {
