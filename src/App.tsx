@@ -6,8 +6,9 @@ import {
   // Voice,
   JoinFlow,
   ApplicationLink,
+  FAQ,
   // Contact, 
-  Footer 
+  Footer
 } from './components';
 import './App.css';
 
@@ -22,6 +23,7 @@ function App() {
         {/* <Voice /> 今後追加予定です */}
         <JoinFlow />
         <ApplicationLink />
+        <FAQ />
         {/* <Contact /> */}
       </main>
       <Footer />
