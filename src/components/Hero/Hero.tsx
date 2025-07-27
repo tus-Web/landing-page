@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
           </h1>
           <div className="hero-buttons">
             <a href="#application" className="btn btn-primary">
-              今すぐ申し込む
+              公式LINEはこちら
             </a>
           </div>
         </div>

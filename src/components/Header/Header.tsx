@@ -15,7 +15,7 @@ const Header: React.FC = () => {
         </div>
 
         <a href="#application" className="cta-button">
-          今すぐ申し込む
+          公式LINEはこちら
         </a>
       </div>
     </header>

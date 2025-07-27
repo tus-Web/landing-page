@@ -7,10 +7,10 @@ const ApplicationLink: React.FC = () => {
       <div className="application-container">
         <div className="application-content">
           <h2>今すぐ参加しよう</h2>
-          <p>
+          {/* <p>
             tus.Genesisで一緒に「想像をともに」創造しませんか？<br />
             説明会への参加申し込みをお待ちしています！
-          </p>
+          </p> */}
           
           <div className="application-buttons">
             <a 
@@ -19,7 +19,7 @@ const ApplicationLink: React.FC = () => {
               rel="noopener noreferrer"
               className="btn btn-primary"
             >
-              今すぐ参加する
+              公式LINEはこちら
             </a>
           </div>
         </div>
