@@ -37,7 +37,7 @@ const FAQ: React.FC = () => {
       question: "活動の頻度、場所、時間は？",
       answer: (
         <p>
-          基本的に<strong>週1回</strong>、大学の教室で集まって活動しています。<br />
+          基本的に<strong>週1回</strong>、<strong>大学の教室で</strong>集まって活動しています。<br />
           通常は<strong>金曜日の18:00〜20:00</strong>に行っています。
         </p>
       )
@@ -54,7 +54,7 @@ const FAQ: React.FC = () => {
       question: "プログラミング経験がなくても大丈夫ですか？",
       answer: (
         <p>
-          全く問題ありません！<br />
+          <strong>全く問題ありません！</strong><br />
           基礎から学べるようにサポートしていますので、初心者も大歓迎です。
         </p>
       )
@@ -63,7 +63,7 @@ const FAQ: React.FC = () => {
       question: "いつでも参加できますか？",
       answer: (
         <p>
-          はい、いつでも参加できます！<br />
+          はい、<strong>いつでも参加できます！</strong><br />
           途中からの参加も歓迎しています。興味があればぜひ一度活動にお越しください。
         </p>
       )
@@ -81,9 +81,9 @@ const FAQ: React.FC = () => {
       question: "サークルの目標は何ですか？",
       answer: (
         <ul className="faq-list">
-          <li>ハッカソンなどの技術イベントへの積極的な参加</li>
-          <li>技術を共有できるコミュニティの形成</li>
-          <li>理科大生のためのアプリケーション開発</li>
+          <li><strong>ハッカソン</strong>などの技術イベントへの積極的な参加</li>
+          <li><strong>技術を共有</strong>できるコミュニティの形成</li>
+          <li>理科大生のための<strong>アプリケーション開発</strong></li>
         </ul>
       )
     },
