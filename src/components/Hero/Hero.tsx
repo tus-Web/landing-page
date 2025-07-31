@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
             <AnimatedText text="tus.Genesis" delay={0} />
           </h1>
           <p className="hero-subtitle">
-            <AnimatedText text="共に創り、共に高める開発サークル" delay={0.5} />
+            <AnimatedText text="共に高め合い、共に創る開発サークル" delay={0.5} />
           </p>
           <div className="hero-buttons">
             <a href="#application" className="btn btn-primary">
