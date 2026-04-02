@@ -14,7 +14,7 @@ const ApplicationLink: React.FC = () => {
           
           <div className="application-buttons">
             <a
-              href="https://lin.ee/86atzK8"
+              href="https://lin.ee/5SKvTQqA"
               target="_blank"
               rel="noopener noreferrer"
               className="line-add-button"
