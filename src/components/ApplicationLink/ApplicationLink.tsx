@@ -13,13 +13,18 @@ const ApplicationLink: React.FC = () => {
           </p> */}
           
           <div className="application-buttons">
-            <a 
-              href="https://lin.ee/lfc18V0" 
-              target="_blank" 
+            <a
+              href="https://lin.ee/86atzK8"
+              target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-primary"
+              className="line-add-button"
             >
-              公式LINEを友達追加しよう
+              <img
+                src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png"
+                alt="友だち追加"
+                height="36"
+                border={0}
+              />
             </a>
           </div>
         </div>

@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
               <a href="https://www.instagram.com/tus.genesis/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                 <FaInstagram className='footer-icon' />
               </a>
-              <a href="https://lin.ee/lfc18V0" target="_blank" rel="noopener noreferrer" aria-label="Line">
+              <a href="https://lin.ee/86atzK8" target="_blank" rel="noopener noreferrer" aria-label="Line">
                 <FaLine className='footer-icon' />
               </a>
               <a href="https://github.com/tus-Web" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
