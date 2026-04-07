@@ -107,3 +107,9 @@ git commit -m "feat: update component-name"
 - [ ] パフォーマンス最適化
 - [ ] お問い合わせフォームのバックエンド連携
 
+
+## 公開サイト
+
+GitHub Pages でデプロイされています。
+
+https://tus-web.github.io/landing-page/
